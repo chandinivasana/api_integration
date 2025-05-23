@@ -1,0 +1,77 @@
+body {
+    font-family: 'Poppins', sans-serif; /* A nice, clean font */
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); /* Cute gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    color: #333;
+    padding: 20px; /* Add some padding for smaller screens */
+    box-sizing: border-box; /* Ensures padding doesn't add to width/height */
+}
+
+.joke-container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    text-align: center;
+    max-width: 500px; /* Max width for the container */
+    width: 90%; /* Responsive width */
+}
+
+.joke-container h1 {
+    font-family: 'Pacifico', cursive; /* A fun, "cute" font for the title */
+    color: #ff6b6b; /* A cheerful color */
+    margin-bottom: 25px;
+    font-size: 2.5em;
+}
+
+#joke-area {
+    margin-bottom: 30px;
+    min-height: 80px; /* Give some space even before joke loads */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#joke-setup {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+#joke-punchline {
+    font-size: 1.1em;
+    color: #e74c3c; /* A distinct color for the punchline */
+    font-weight: bold;
+    line-height: 1.6;
+    display: none; /* Hide initially until there's a punchline */
+}
+
+#getJokeBtn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 8px; /* Rounded button */
+    cursor: pointer; /* Mouse pointer to hand */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#getJokeBtn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Simple loading text style */
+.loading-text {
+    font-style: italic;
+    color: #777;
+}
