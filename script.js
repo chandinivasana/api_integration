@@ -1,4 +1,4 @@
-// Get references to our HTML elements
+
 const jokeSetupElement = document.getElementById('joke-setup');
 const jokePunchlineElement = document.getElementById('joke-punchline');
 const getJokeBtn = document.getElementById('getJokeBtn');
@@ -8,7 +8,7 @@ const apiUrl = 'https://official-joke-api.appspot.com/random_joke';
 
 // Function to fetch a joke from the API
 async function fetchJoke() {
-    // Show a loading message
+   
     jokeSetupElement.textContent = 'Fetching a joke...';
     jokeSetupElement.classList.add('loading-text'); // Add class for styling
     jokePunchlineElement.textContent = ''; // Clear previous punchline
